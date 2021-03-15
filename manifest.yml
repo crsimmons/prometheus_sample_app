@@ -1,0 +1,9 @@
+---
+applications:
+- name: prometheus_app
+  memory: 512M
+  instances: 3
+  buildpacks:
+    - go_buildpack
+  env:
+    GOVERSION: go1.15
